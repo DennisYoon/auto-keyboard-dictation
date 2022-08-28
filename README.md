@@ -1,6 +1,6 @@
-<img src="https://img.shields.io/badge/version-1.0.0-black" />
+<img src="https://img.shields.io/badge/version-0.1.0-black" />
 
-# Auto Keyboard Dictation
+# Auto Keyboard Dictation(alpha ver.)
 
 ## 🛒 essential library
 1. `pyautogui`
