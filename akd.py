@@ -1,5 +1,6 @@
 from time import sleep
 from pyautogui import press, write
+import pyautogui as py
 from hangulSeparator.hangul_separator import separate
 
 kr2en = {
@@ -29,6 +30,7 @@ def toEnglish(value):
   return result
 
 def dictate(value):
+  py.PAUSE = 0
   nowMode = "E"
   for v in value:
     if "KR" in v:
@@ -36,10 +38,8 @@ def dictate(value):
         press("hangul")
         nowMode = "K"
       write(v["KR"])
-    elif "EN" in v and v["EN"] in " .,":
-      write(v["EN"])
     elif "EN" in v:
       if nowMode == "K":
-        press("english")
+        press("hangul")
         nowMode = "E"
       write(v["EN"])
