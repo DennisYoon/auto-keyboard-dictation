@@ -1,7 +1,7 @@
 from time import sleep
 from pyautogui import press, write
 import pyautogui as py
-from hangulSeparator.hangul_separator import separate
+from src.separator import separate
 
 kr2en = {
   'ㅂ': 'q', 'ㅈ': 'w', 'ㄷ': 'e', 'ㄱ': 'r', 'ㅅ': 't', 'ㅛ': 'y', 'ㅕ': 'u', 'ㅑ': 'i', 'ㅐ': 'o', 'ㅔ': 'p',

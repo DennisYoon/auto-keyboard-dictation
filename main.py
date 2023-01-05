@@ -1,5 +1,5 @@
 from tkinter import *
-from akd import doAutoKeyboardDictation
+from src.akd import doAutoKeyboardDictation
 
 initSize = {
   "x": 700,
